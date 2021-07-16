@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-    <swiper :options="swiperOptions" >
+    <swiper :options="swiperOptions" class>
       <swiper-slide v-for="item,index in page" :key="index">
           <div class="icons-item" v-for="page,index in item" :key="index">
             <img :src="page.imgUrl" alt="">
@@ -59,15 +59,17 @@ export default {
 <style scoped>
   .icons {
     width: 100%;
-
+    background-color: #fff;
     
   }
 
   .icons-item {
     float: left;
     /* margin: .4rem 0 .65rem .7rem; */
-    padding: .4rem;
-    margin-bottom: 10px;
+    /* padding: .4rem; */
+    /* margin-bottom: 10px; */
+    margin-left: .7rem;
+    margin-top: .4rem;
     text-align: center;
     width: 1rem;
     height: 1.24rem;
@@ -84,6 +86,10 @@ export default {
   .swiper-item {
     margin-top: 500px;
   } 
-
-
+ .icons>>>.swiper-slide-active{
+   /* background-color: black; */
+   width: 100%;
+   height: 4rem;
+ }
+ /* class="swiper-pagination swiper-item swiper-pagination-bullets" */
 </style>

@@ -4,6 +4,9 @@
   <scroll>
     <home-swiper></home-swiper>
     <icons></icons>
+    <location></location>
+    <home-activity></home-activity>
+    <hot></hot>
     <ul>
       <li>1</li>
       <li>2</li>
@@ -116,7 +119,9 @@ import HomeSwiper from './pages/Swiper.vue'
 import HomeHeader from './pages/Header.vue'
 import Scroll from '@/components/scroll/Scroll.vue'
 import Icons from './pages/Icons.vue'
-
+import Location from './pages/Location.vue'
+import HomeActivity from './pages/HomeActivity.vue'
+import Hot from './pages/Hot.vue'
 
 
 export default {
@@ -126,9 +131,15 @@ export default {
     HomeSwiper,
     Scroll,
     Icons,
+    Location,
+    HomeActivity,
+    Hot,
   }
 }
 </script>
 
-<style scoped>
+<style scoped>  
+  .home {
+    background-color: #f5f4f6;
+  }
 </style>

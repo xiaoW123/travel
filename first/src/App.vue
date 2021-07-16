@@ -18,8 +18,8 @@ export default {
 <style scopde>
 @import 'assets/css/reset.css';
 @import 'assets/font/iconfont.css';
-body {
-  overflow: hidden;
-}
+/* body {
+  overflow-y: hidden;
+} */
 
 </style>

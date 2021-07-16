@@ -20,7 +20,8 @@ export default {
     this.scroll = new BScroll(this.$refs.aaa,{
       probeType: 2,
       pullUpLoad: true,
-      click: true
+      click: true,
+      mouseWheel: true,
     }) 
   }
 }
@@ -31,6 +32,6 @@ export default {
     width: 100%;
     height: calc(100vh - 0.88rem);
 
-    overflow: hidden;
+    overflow-y: hidden;
   }
 </style>
