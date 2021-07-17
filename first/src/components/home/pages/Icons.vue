@@ -22,22 +22,19 @@ export default {
   name: 'Icons',
   data() {
     return {
-      iconItem: [
-        {id: '酒店', imgUrl: require('@/assets/img/hotel.png')},
-        {id: '度假', imgUrl: require('@/assets/img/package.png')},
-        {id: '景点门票', imgUrl: require('@/assets/img/piao.png')},
-        {id: '火车票', imgUrl: require('@/assets/img/train.png')},
-        {id: '火车票', imgUrl: require('@/assets/img/train.png')},
-        {id: '火车票', imgUrl: require('@/assets/img/train.png')},
-        {id: '火车票', imgUrl: require('@/assets/img/train.png')},
-        {id: '火车票', imgUrl: require('@/assets/img/train.png')},
-        {id: '火车票', imgUrl: require('@/assets/img/train.png')},
-        {id: '火车票', imgUrl: require('@/assets/img/train.png')},
-      ],
-        swiperOptions: {          
-          pagination:{
-            el:'.swiper-pagination',
-          },}
+      swiperOptions: {          
+        pagination:{
+          el:'.swiper-pagination',
+        },
+      }
+    }
+  },
+  props: {
+    iconItem: {
+      type: Array,
+      default() {
+        return []
+      }
     }
   },
   computed: {
@@ -80,11 +77,11 @@ export default {
   } 
 
   .icons-item p {
-    font-size: .28px;
+    font-size: .25rem;
   }
 
   .swiper-item {
-    margin-top: 500px;
+    margin-top: 5rem;
   } 
  .icons>>>.swiper-slide-active{
    /* background-color: black; */

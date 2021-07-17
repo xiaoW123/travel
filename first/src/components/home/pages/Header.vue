@@ -35,8 +35,7 @@ export default {
   }
   .header-left {
     margin-right: .4rem;
-    font-weight: 700
-    ;
+    font-weight: 700;
   }
 
   .header-conter {

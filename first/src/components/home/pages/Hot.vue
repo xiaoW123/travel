@@ -5,8 +5,8 @@
       <span class="header-left">本周热门榜单</span>
       <span class="header-right">全部榜单</span>
     </div>
-
-    <div class="hot-body">
+    <div class="hot-f">
+      <div class="hot-body">
         <div class="hot-item" 
             v-for="item,index in hotData"
             :key="index">
@@ -14,7 +14,9 @@
           <span class="title">{{item.title}}</span><br>
           <span class="price">￥{{item.price}}</span>起
         </div>
+      </div>
     </div>
+    
     
   </div>
 </template>
@@ -24,52 +26,27 @@ export default {
   name: 'Hot',
   data() {
     return {
-      hotData: [
-        {
-          id: '1',
-          imgUrl: require('@/assets/img/rm1_03.png'),
-          title: '故宫',
-          price: '20'
-        },
-        {
-          id: '2',
-          imgUrl: require('@/assets/img/rm2_05.png'),
-          title: '十渡聚龙湾玻璃栈道',
-          price: '35'
-        },
-        {
-          id: '3',
-          imgUrl: require('@/assets/img/rm3_07.png'),
-          title: '八达岭长城',
-          price: '25'
-        },
-        {
-          id: '4',
-          imgUrl: require('@/assets/img/rm4_03.png'),
-          title: '水立方',
-          price: '14'
-        },
-        {
-          id: '5',
-          imgUrl: require('@/assets/img/rm5_05.png'),
-          title: '定陵',
-          price: '50'
-        },
-        {
-          id: '6',
-          imgUrl: require('@/assets/img/rm6_07.png'),
-          title: '故宫',
-          price: '20'
-        }, 
-      ]
     }
+  },
+  props: {
+    hotData: {
+      type: Array,
+      default() {
+        return []
+      }
+    }
+  },
+  methods: {
+
   }
 }
 </script>
 
 <style scoped>
+
   .hot {
     background-color: #fff;
+    margin-bottom: .4rem;
   }
   .hot-header {
     display: flex;
@@ -103,12 +80,14 @@ export default {
     margin-left: .1rem;
     font-size: .2rem;
   }
-
   .hot-body {
     height: 3rem;
     width: 100%;
     white-space: nowrap;
-    overflow-x: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: -webkit-box;
+
   }
 
   .hot-item {

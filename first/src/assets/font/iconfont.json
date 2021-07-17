@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1321305",
+      "name": "经典案例_五角星_收藏后",
+      "font_class": "jingdiananli_wujiaoxing_shoucanghou",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "22918481",
+      "name": "Heart",
+      "font_class": "Heart",
+      "unicode": "e774",
+      "unicode_decimal": 59252
+    },
+    {
       "icon_id": "903796",
       "name": "火",
       "font_class": "huo",

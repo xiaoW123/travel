@@ -18,24 +18,6 @@
     },
     data() {
       return {
-        swiperList: [
-          {
-            id: '1',
-            imgUrl: require('@/assets/img/1.jpg')
-          },
-          {
-            id: '2',
-            imgUrl: require('@/assets/img/2.jpeg')
-          },
-          {
-            id: '3',
-            imgUrl: require('@/assets/img/3.jpeg')
-          },
-          {
-            id: '4',
-            imgUrl: require('@/assets/img/4.jpeg')
-          },
-        ],
         swiperOptions: {
           pagination:{
             el:'.swiper-pagination',
@@ -46,6 +28,14 @@
         }
       }
     },
+    props: {
+      swiperList: {
+        type: Array,
+        default() {
+          return []
+        }
+      }
+    }
   }
 </script>
 

@@ -13,7 +13,7 @@ export default {
   name: 'Scroll',
   data() {
     return {
-      scroll: null
+      scroll: ''
     }
   },
   mounted() {
@@ -23,6 +23,14 @@ export default {
       click: true,
       mouseWheel: true,
     }) 
+  },
+  methods: {
+    refresh() {
+      this.scroll.refresh()
+    },
+    finishPullUp() {
+      this.scroll.finishPullUp()
+    },
   }
 }
 </script>
@@ -32,6 +40,6 @@ export default {
     width: 100%;
     height: calc(100vh - 0.88rem);
 
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
   }
 </style>
