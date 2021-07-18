@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
+    
   </div>
 </template>
 
@@ -18,8 +21,4 @@ export default {
 <style scopde>
 @import 'assets/css/reset.css';
 @import 'assets/font/iconfont.css';
-/* body {
-  overflow-y: hidden;
-} */
-
 </style>

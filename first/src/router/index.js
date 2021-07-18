@@ -13,6 +13,10 @@ const router = new Router({
     {
       path: '/home',
       component: () => import('../components/home/Home.vue')
+    },
+    {
+      path: '/city',
+      component: () => import('../components/city/City.vue')
     }
   ],
   mode: 'history'

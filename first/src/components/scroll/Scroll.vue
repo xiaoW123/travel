@@ -21,7 +21,9 @@ export default {
       probeType: 2,
       pullUpLoad: true,
       click: true,
-      mouseWheel: true,
+      scrollX: true,
+      // // mouseWheel: true,
+      mouseWheel: true
     }) 
   },
   methods: {
@@ -40,6 +42,6 @@ export default {
     width: 100%;
     height: calc(100vh - 0.88rem);
 
-    /* overflow-y: hidden; */
+    overflow: hidden;
   }
 </style>

@@ -25,7 +25,6 @@ import Hot from './pages/Hot.vue'
 import Like from './pages/Like.vue'
 import HomeVacation from './pages/Vacation.vue'
 import {request} from '@/network/index.js'
-// import Axios from 'axios'
 
 export default {
   name: 'Home',
@@ -54,15 +53,14 @@ export default {
   },
   mounted() {
     //promise
-    request({}).then((res) => {
+    request().then((res) => {
       this.hotData = res.data.data[0].hotData
       this.iconItem = res.data.data[0].iconItem
       this.likeData = res.data.data[0].likeData
       this.swiperList = res.data.data[0].swiperList
       this.vacationImgUrl = res.data.data[0].vacationImgUrl
       this.avtivityData = res.data.data[0].avtivityData
-      // this.$refs.Scroll.finishPullUp()
-      // this.$refs.Scroll.scroll.refresh()
+
     }).then(res => {
       this.$refs.Scroll.scroll.refresh()
     })
@@ -75,27 +73,13 @@ export default {
     //   console.log(res)
     // })
   },
-  // update() {
-  //     this.$refs.Scroll.finishPullUp()
 
-  //   this.$refs.Scroll.refresh()
-  // },
-  // activetd() {
-  //     this.$refs.Scroll.finishPullUp()
-
-  //   this.$refs.Scroll.refresh()
-  // },
-  // destroyed() {
-  //     this.$refs.Scroll.finishPullUp()
-
-  //   this.$refs.Scroll.refresh()
-  // }
 }
 </script>
 
 <style scoped>  
   .home {
     background-color: #f5f4f6;
-    overflow-y: hidden;
+    overflow: hidden;
   }
 </style>

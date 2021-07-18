@@ -7,3 +7,11 @@ export function request(config) {
   })
   return abc({config})
 }
+
+export function requestCity(config) {
+  const abc = Axios.create({
+    baseURL: 'http://localhost:8080/static/mock/allCity.json',
+    timeout: 5000
+  })
+  return abc({config})
+}

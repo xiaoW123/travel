@@ -57,7 +57,7 @@ export default {
   }
 
   .vacation-img h1 {
-    font-size: .4rem;
+    font-size: .35rem;
     padding-left: .2rem;
     margin: .2rem 0;
   }

@@ -7,10 +7,13 @@
       <span class="iconfont">&#xe601;</span>
       输入城市/景点/游玩主题
     </div>
-    <div class="header-right">
+    <!-- <router-link to="/city"></router-link> -->
+      <div class="header-right" @click="bnt1">
       北京
       <span class="iconfont">&#xe604;</span>
     </div>
+    
+    
   </div>
 </template>
 
@@ -18,12 +21,18 @@
 
 export default {
   name: 'Header',
+  methods: {
+    bnt1() {
+      this.$router.push('/city')
+    }
+  }
 }
 </script>
 
 
 <style scoped>
   .header {
+    position: relative;
     width: 100%;
     height: .88rem;
     background-color: #00bcd4;
@@ -32,6 +41,8 @@ export default {
 
     display: flex;
     line-height: .88rem;
+
+    z-index: 10;
   }
   .header-left {
     margin-right: .4rem;
