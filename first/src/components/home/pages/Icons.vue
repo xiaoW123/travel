@@ -2,14 +2,13 @@
   <div class="icons">
     <swiper :options="swiperOptions" class>
       <swiper-slide v-for="item,index in page" :key="index">
+        <div class="icons-div">
           <div class="icons-item" v-for="page,index in item" :key="index">
             <img :src="page.imgUrl" alt="">
             <p>{{page.id}}</p>
           </div>
-        <!-- <div class="icons-item" v-for="(item,index) in iconItem" :key="index">
-          <img :src="item.imgUrl" alt="">
-          <p>{{item.id}}</p>
-        </div> -->
+        </div>
+          
       </swiper-slide>
 
       <div class="swiper-pagination swiper-item" slot="pagination"></div>
@@ -59,17 +58,23 @@ export default {
     background-color: #fff;
     
   }
-
+  .icons-div {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .icons-item {
-    float: left;
+    flex: 25%;
+    text-align: center;
+    margin-top: .3rem;
+    /* float: left; */
     /* margin: .4rem 0 .65rem .7rem; */
     /* padding: .4rem; */
     /* margin-bottom: 10px; */
-    margin-left: .7rem;
+    /* margin-left: .7rem;
     margin-top: .4rem;
     text-align: center;
     width: 1rem;
-    height: 1.24rem;
+    height: 1.24rem; */
   }
 
   .icons-item img{

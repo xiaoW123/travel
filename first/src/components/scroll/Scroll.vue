@@ -22,9 +22,11 @@ export default {
       pullUpLoad: true,
       click: true,
       scrollX: true,
-      // // mouseWheel: true,
       mouseWheel: true
-    }) 
+    }),
+    this.scroll.on('scroll', position => {
+      this.$emit('scroll', position)
+    })
   },
   methods: {
     refresh() {

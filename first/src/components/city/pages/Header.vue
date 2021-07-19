@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header-left">
-      <span class="iconfont">&#xe603;</span>
+      <span class="iconfont" @click="headerClick">&#xe603;</span>
     </div> 
       <p>城市选择</p>
   </div>
@@ -11,6 +11,11 @@
 
 export default {
   name: 'Header',
+  methods: {
+    headerClick() {
+      this.$router.push('/')
+    }
+  }
 }
 </script>
 
@@ -37,11 +42,12 @@ export default {
 
   .header p {
     font-size: .3rem;
-    /* width: 100%; */
-    /* margin-left: calc(50% - 30px); */
     margin: 0 auto;
     padding-right: .35rem;
   }
 
+  .header-left span {
+    font-size: .4rem;
+  }
 
 </style>

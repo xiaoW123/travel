@@ -6,7 +6,7 @@
     <div class="like-item">
       <ul v-for="item,index in likeData"
           :key="index">
-        <li class="like-li">
+        <li class="like-li" @click="detailClick">
           <span class="img">
             <img :src="item.imgUrl" alt="">
           </span>
@@ -43,6 +43,11 @@ export default {
       default() {
         return []
       }
+    }
+  },
+  methods: {
+    detailClick() {
+      this.$router.push('/detail')
     }
   }
 }

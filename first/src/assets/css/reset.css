@@ -63,3 +63,7 @@ html {
 a {
   text-decoration: none;
 }
+
+.clear{
+  clear: both;
+}

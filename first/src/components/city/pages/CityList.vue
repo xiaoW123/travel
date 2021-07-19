@@ -3,13 +3,19 @@
     <p class="list-p">热门城市</p>
     <div class="list-item">
       <ul >
-        <li v-for="item,index in hotCityList" :key="index">{{item.cityName}}</li>  
+        <li v-for="item,index in hotCityList" 
+        :key="index" @click="changeClick(item.cityName)">
+          {{item.cityName}}
+        </li>  
       </ul>
     </div>
   </div>
 </template>
 
 <script>
+import {mapMutations} from 'vuex'
+ 
+
 export default {
   name: 'CityList',
   props: {
@@ -18,6 +24,13 @@ export default {
       default() {
         return []
       }
+    }
+  },
+  methods: {
+    ...mapMutations(['changeCity']),
+    changeClick(cityName) {
+      this.changeCity(cityName)
+      this.$router.push('/')
     }
   }
 

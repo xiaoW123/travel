@@ -223,7 +223,225 @@
     },
 
     {
-      "city": "上海"
+      "city": "上海",
+      "hotData": [
+        {
+          "id": "1",
+          "imgUrl": "http://localhost:8080/static/img/rm1_03.png",
+          "title": "东方明珠",
+          "price": "20"
+        },
+        {
+          "id": "2",
+          "imgUrl": "http://localhost:8080/static/img/rm2_05.png",
+          "title": "外滩",
+          "price": "35"
+        },
+        {
+          "id": "3",
+          "imgUrl": "http://localhost:8080/static/img/rm3_07.png",
+          "title": "田子坊",
+          "price": "25"
+        },
+        {
+          "id": "4",
+          "imgUrl": "http://localhost:8080/static/img/rm4_03.png",
+          "title": "上海",
+          "price": "14"
+        },
+        {
+          "id": "5",
+          "imgUrl": "http://localhost:8080/static/img/rm5_05.png",
+          "title": "田子坊",
+          "price": "50"
+        },
+        {
+          "id": "6",
+          "imgUrl": "http://localhost:8080/static/img/rm6_07.png",
+          "title": "故宫",
+          "price": "20"
+        }
+      ],
+      "iconItem": [
+          {
+            "id": "酒店", 
+            "imgUrl": "http://localhost:8080/static/img/hotel.png"
+          },
+          {
+            "id": "度假", 
+            "imgUrl": "http://localhost:8080/static/img/package.png"
+          },
+          {
+            "id": "景点门票", 
+            "imgUrl": "http://localhost:8080/static/img/piao.png"
+          },
+          {
+            "id": "火车票", 
+            "imgUrl": "http://localhost:8080/static/img/train.png"
+          },
+          {
+            "id": "火车票", 
+            "imgUrl": "http://localhost:8080/static/img/train.png"
+          },
+          {
+            "id": "火车票", 
+            "imgUrl": "http://localhost:8080/static/img/train.png"
+          },
+          {
+            "id": "火车票", 
+            "imgUrl": "http://localhost:8080/static/img/train.png"
+          },
+          {
+            "id": "火车票", 
+            "imgUrl": "http://localhost:8080/static/img/train.png"
+          },
+          {
+            "id": "火车票", 
+            "imgUrl": "http://localhost:8080/static/img/train.png"
+          },
+          {
+            "id": "火车票", 
+            "imgUrl": "http://localhost:8080/static/img/train.png"
+          }
+      ],
+      "likeData": [
+        {
+          "id": "1",
+          "imgUrl": "http://localhost:8080/static/img/rm1_03.png",
+          "title": "上海",
+          "comment": "1342",
+          "price": "18.8"
+        },
+        {
+          "id": "2",
+          "imgUrl":" http://localhost:8080/static/img/images/like2_06.png",
+          "title": "东方明珠",
+          "comment": "1916",
+          "price": "24.9"
+        },
+        {
+          "id": "3",
+          "imgUrl": "http://localhost:8080/static/img/rm3_07.png",
+          "title": "上海",
+          "comment": "3263",
+          "price": "14"
+        },
+        {
+          "id": "4",
+          "imgUrl": "http://localhost:8080/static/img/rm4_03.png",
+          "title": "东方明珠",
+          "comment": "1233",
+          "price": "14"
+        },
+        {
+          "id": "5",
+          "imgUrl": "http://localhost:8080/static/img/rm5_05.png",
+          "title": "上海",
+          "comment": "1263",
+          "price": "50"
+        },
+           {
+          "id": "6",
+          "imgUrl": "http://localhost:8080/static/img/rm1_03.png",
+          "title": "东方明珠",
+          "comment": "1342",
+          "price": "18.8"
+        },
+        {
+          "id": "7",
+          "imgUrl": "http://localhost:8080/static/img/images/like2_06.png",
+          "title": "上海",
+          "comment": "1916",
+          "price": "24.9"
+        },
+        {
+          "id": "8",
+          "imgUrl": "http://localhost:8080/static/img/rm3_07.png",
+          "title": "八达岭长城",
+          "comment": "3263",
+          "price": "14"
+        },
+        {
+          "id": "9",
+          "imgUrl": "http://localhost:8080/static/img/rm4_03.png",
+          "title": "水立方",
+          "comment": "1233",
+          "price": "14"
+        },
+        {
+          "id": "10",
+          "imgUrl": "http://localhost:8080/static/img/rm5_05.png",
+          "title": "定陵",
+          "comment": "1263",
+          "price": "50"
+        }
+      ],
+      "swiperList": [
+        {
+          "id": "1",
+          "imgUrl": "http://localhost:8080/static/img/1.jpg"
+        },
+        {
+          "id": "2",
+          "imgUrl": "http://localhost:8080/static/img/2.jpeg"
+        },
+        {
+          "id": "3",
+          "imgUrl": "http://localhost:8080/static/img/3.jpeg"
+        },
+        {
+          "id": "4",
+          "imgUrl": "http://localhost:8080/static/img/4.jpeg"
+        }
+      ],
+      "vacationImgUrl": [
+        {
+          "id": "1",
+          "imgRul":"http://localhost:8080/static/img/images/zm1_02.png",
+          "title": "激流勇进，烧烤露营",
+          "titlep": "轻功水上漂，任我乐逍遥"
+        },
+         {
+          "id": "2",
+          "imgRul": "http://localhost:8080/static/img/images/zm2_04.png",
+          "title": "激流勇进，烧烤露营",
+          "titlep": "轻功水上漂，任我乐逍遥"
+        },
+         {
+          "id": "3",
+          "imgRul": "http://localhost:8080/static/img/images/zm1_02.png",
+          "title": "激流勇进，烧烤露营",
+          "titlep": "轻功水上漂，任我乐逍遥"
+        },
+        {
+          "id": "4",
+          "imgRul":" http://localhost:8080/static/img/images/zm2_04.png",
+          "title": "激流勇进，烧烤露营",
+          "titlep": "轻功水上漂，任我乐逍遥"
+        },
+        {
+          "id": "5",
+          "imgRul": "http://localhost:8080/static/img/images/zm1_02.png",
+          "title": "激流勇进，烧烤露营",
+          "titlep": "轻功水上漂，任我乐逍遥"
+        },
+         {
+          "id": "6",
+          "imgRul": "http://localhost:8080/static/img/images/zm2_04.png",
+          "title": "激流勇进，烧烤露营",
+          "titlep": "轻功水上漂，任我乐逍遥"
+        }
+      ],
+      "avtivityData": [
+        {
+          "id": "1",
+          "imgUrl": "http://localhost:8080/static/img/mp.png"
+        },
+        {
+          "id": "2",
+          "imgUrl": "http://localhost:8080/static/img/mp2.png"
+        }
+      ]
     }
   ]
 }

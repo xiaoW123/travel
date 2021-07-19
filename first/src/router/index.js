@@ -16,7 +16,11 @@ const router = new Router({
     },
     {
       path: '/city',
-      component: () => import('../components/city/City.vue')
+      component: () => import('@/components/city/City.vue')
+    },
+    {
+      path: '/detail',
+      component: () => import('@/components/details/Detail.vue')
     }
   ],
   mode: 'history'

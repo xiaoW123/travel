@@ -1,10 +1,12 @@
 <template>
   <div class="city">
     <city-header></city-header>
-    <scroll>
+    
+    <scroll ref="Scroll">
       <city-list :hotCityList="hotCityList"></city-list>
       <sort :cityList="cityList"></sort>
     </scroll>
+
   </div>
 </template>
 
@@ -15,6 +17,7 @@ import CityList from './pages/CityList.vue'
 import {requestCity} from '@/network/index.js'
 import Sort from './pages/Sort.vue'
 
+
 export default {
   name: 'City',
   components: {
@@ -22,6 +25,7 @@ export default {
     Scroll,
     CityList,
     Sort,
+
   },
   data() {
     return {
@@ -30,14 +34,16 @@ export default {
     }
   },
   mounted() {
-    requestCity().then(res => {
+    requestCity({}).then(res => {
       this.hotCityList = res.data.hotCityList
       this.cityList = res.data.cityList
       console.log(res)
       console.log(this.hotCityList)
       console.log(this.cityList)
+    }).then(res => {
+      this.$refs.Scroll.refresh()
     })
-  }
+  },
 }
     
 </script>

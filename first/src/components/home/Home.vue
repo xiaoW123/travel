@@ -26,6 +26,8 @@ import Like from './pages/Like.vue'
 import HomeVacation from './pages/Vacation.vue'
 import {request} from '@/network/index.js'
 
+import {mapState} from 'vuex'
+
 export default {
   name: 'Home',
   components: {
@@ -46,24 +48,36 @@ export default {
       likeData: [],
       swiperList: [],
       vacationImgUrl: [],
-      avtivityData: []
+      avtivityData: [],
+      changeCity: []
     }
   },
-  created() {
+  computed: {
+    ...mapState(['city'])
   },
-  mounted() {
-    //promise
-    request().then((res) => {
-      this.hotData = res.data.data[0].hotData
-      this.iconItem = res.data.data[0].iconItem
-      this.likeData = res.data.data[0].likeData
-      this.swiperList = res.data.data[0].swiperList
-      this.vacationImgUrl = res.data.data[0].vacationImgUrl
-      this.avtivityData = res.data.data[0].avtivityData
-
+  methods: {
+    getData() {
+      request().then((res) => {
+      let data = res.data.data
+      data.forEach((item) => {
+        if (this.city == item.city) {
+          this.hotData = item.hotData
+          this.iconItem = item.iconItem
+          this.likeData = item.likeData
+          this.swiperList = item.swiperList
+          this.vacationImgUrl = item.vacationImgUrl
+          this.avtivityData = item.avtivityData
+        }
+      });
     }).then(res => {
       this.$refs.Scroll.scroll.refresh()
     })
+    }
+  },
+  mounted() {
+    //promise
+    this.changeCity = this.city  //this.changeCity请求前保存的地址
+    this.getData()
 
     //普通方法
     // Axios({
@@ -73,6 +87,13 @@ export default {
     //   console.log(res)
     // })
   },
+  activated() {
+    // console.log(this.city, this.changeCity)  
+    if (this.changeCity != this.city) {  //如果两个请求地址不一样，则再发送一次请求
+      this.getData()
+      this.changeCity = this.city
+    }
+  }
 
 }
 </script>

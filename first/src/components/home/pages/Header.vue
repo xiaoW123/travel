@@ -9,22 +9,25 @@
     </div>
     <!-- <router-link to="/city"></router-link> -->
       <div class="header-right" @click="bnt1">
-      北京
+      {{city}}
       <span class="iconfont">&#xe604;</span>
-    </div>
+      </div>
     
     
   </div>
 </template>
 
 <script>
-
+import {mapState} from 'vuex'
 export default {
   name: 'Header',
   methods: {
     bnt1() {
-      this.$router.push('/city')
+      this.$router.push('/city').catch(err => err)
     }
+  },
+  computed: {
+    ...mapState(['city'])
   }
 }
 </script>
@@ -47,6 +50,10 @@ export default {
   .header-left {
     margin-right: .4rem;
     font-weight: 700;
+  }
+
+  .header-left span {
+    font-size: .4rem;
   }
 
   .header-conter {

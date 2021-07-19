@@ -594,5 +594,43 @@
       "id": "12",
       "cityName": "厦门"
     }
+  ],
+  "details":[
+    {
+      "id": "1",
+      "imgUrl": "http://localhost:8080/static/img/jd/1.jpeg"
+    },
+    {
+      "id": "2",
+      "imgUrl": "http://localhost:8080/static/img/jd/2.jpeg"
+    },
+    {
+      "id": "3",
+      "imgUrl": "http://localhost:8080/static/img/jd/3.jpeg"
+    },
+    {
+      "id": "4",
+      "imgUrl": "http://localhost:8080/static/img/jd/4.jpeg"
+    },
+    {
+      "id": "5",
+      "imgUrl": "http://localhost:8080/static/img/jd/5.jpeg"
+    },
+    {
+      "id": "6",
+      "imgUrl": "http://localhost:8080/static/img/jd/6.jpeg"
+    },
+    {
+      "id": "7",
+      "imgUrl": "http://localhost:8080/static/img/jd/7.jpeg"
+    },
+    {
+      "id": "8",
+      "imgUrl": "http://localhost:8080/static/img/jd/8.jpeg"
+    },
+    {
+      "id": "9",
+      "imgUrl": "http://localhost:8080/static/img/jd/9.jpeg"
+    }
   ]
 }
